@@ -14,7 +14,7 @@ function ReviewStar() {
           return (
             <label key={index} onMouseOut={()=>setHover(null)} className=" mb-3" >
                <input type="radio" name="star" onClick={()=>setcurrent(index+1)} className=" hidden"/>
-              <FaStar size={50} onMouseEnter={()=>setHover(index+1)}  className={index< current || Hover ?"text-colorStar" : " text-slate-300"}/>
+              <FaStar size={50} onMouseEnter={()=>setHover(index+1)} onMouseOut={()=>setHover(null)} className={index< current || Hover ?"text-colorStar" : " text-slate-300"}/>
             </label>
           );
         })
