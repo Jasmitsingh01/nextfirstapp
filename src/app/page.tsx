@@ -6,6 +6,7 @@ import SelectOption from "@/components/SelectOption";
 export default function Home() {
   return (
     <div className=" px-1 py-5">
+      <button className=" border-2 p-2 text-xl w-[30px] h-[40px] absolute top-0 left-1 rounded-md">X</button>
       <h4 className=" text-3xl font-semibold my-10">Leave a review</h4>
       <form >
         <div className=" mb-5 border-b-2 border-dashed">
@@ -32,7 +33,7 @@ export default function Home() {
           </div>
 
         </div>
-        <button type="button" className=" block mx-auto w-1/6 bg-green-500 text-green-950 font-semibold4 p-3">Publish Review</button>
+        <button type="button" className=" block mx-auto w-1/6 bg-green-500 text-green-950 font-semibold4 p-3  rounded-md">Publish Review</button>
       </form>
 
 
